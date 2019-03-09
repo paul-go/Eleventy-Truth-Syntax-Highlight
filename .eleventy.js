@@ -1,4 +1,6 @@
 
+const Highlighter = require("truth-syntax-highlighter");
+
 function hasTemplateFormat(templateFormats = ["*"], format = false)
 {
 	if (!Array.isArray(templateFormats))
@@ -18,7 +20,6 @@ module.exports = {
 		{
 			eleventyConfig.addPairedNunjucksShortcode("truth", content =>
 			{
-				const Highlighter = require("truth-syntax-highlighter");
 				return Highlighter.toHtml(content, "\t");
 			});
 		}
