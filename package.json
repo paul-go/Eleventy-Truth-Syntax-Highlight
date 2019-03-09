@@ -1,0 +1,30 @@
+{
+	"name": "eleventy-truth-syntax-highlight",
+	"version": "1.0.0",
+	"description": "A plugin for syntax highlighting Truth code.",
+	"main": ".eleventy.js",
+	"scripts": {},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/paul-go/Eleventy-Truth-Syntax-Highlight.git"
+	},
+	"keywords": [
+		"eleventy",
+		"eleventy-plugin",
+		"truth",
+		"syntax-highlight"
+	],
+	"author": {
+		"name": "Paul Go"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/paul-go/Eleventy-Truth-Syntax-Highlight/issues"
+	},
+	"devDependencies": {
+		"@11ty/eleventy": "^0.6.0"
+	},
+	"dependencies": {
+		"truth-syntax-highlighter": "^1.0.1"
+	}
+}
