@@ -1,7 +1,7 @@
 {
-	"name": "eleventy-truth-syntax-highlight",
+	"name": "truth-syntax-highlighter-eleventy",
 	"version": "1.0.0",
-	"description": "A plugin for syntax highlighting Truth code.",
+	"description": "An eleventy plugin for syntax highlighting Truth code.",
 	"main": ".eleventy.js",
 	"scripts": {},
 	"repository": {
