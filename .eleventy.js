@@ -1,17 +1,3 @@
-const Highlighter = require("truth-syntax-highlighter");
-
-module.exports = {
-	configFunction: function(eleventyConfig, options = {})
-	{
-		if (hasTemplateFormat(options.templateFormats, "njk"))
-		{
-			eleventyConfig.addPairedNunjucksShortcode("truth", content =>
-			{
-				return Highlighter.toHtml(content, "\t");
-			});
-		}
-	}
-};
 
 function hasTemplateFormat(templateFormats = ["*"], format = false)
 {
@@ -24,3 +10,17 @@ function hasTemplateFormat(templateFormats = ["*"], format = false)
 	
 	return false;
 }
+
+module.exports = {
+	configFunction: function(eleventyConfig, options = {})
+	{
+		if (hasTemplateFormat(options.templateFormats, "njk"))
+		{
+			eleventyConfig.addPairedNunjucksShortcode("truth", content =>
+			{
+				const Highlighter = require("truth-syntax-highlighter");
+				return Highlighter.toHtml(content, "\t");
+			});
+		}
+	}
+};
